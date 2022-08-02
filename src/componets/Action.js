@@ -11,7 +11,7 @@ const Pause = () => (
 const Play = () => <View style={styles.triangle} />;
 
 const Action = ({ play }) => (
-  <View style={styles.action}>{play ? <Play /> : <Pause />}</View>
+  <View style={styles.action}>{!play ? <Play /> : <Pause />}</View>
 );
 
 const styles = StyleSheet.create({
